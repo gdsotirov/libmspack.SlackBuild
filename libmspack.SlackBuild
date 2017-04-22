@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Slackware build script for libmspack
-# Copyright (C) 2008-2015 Georgi D. Sotirov <gdsotirov@dir.bg>
+# Copyright (C) 2008-2017 Georgi D. Sotirov <gdsotirov@dir.bg>
 #
 # This program is free software; you can redistribute it and/or
 # modify it under the terms of the GNU General Public License
@@ -17,14 +17,14 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 # 
-# $Id: libmspack.SlackBuild,v 1.5 2017/04/22 17:52:56 gsotirov Exp $
+# $Id: libmspack.SlackBuild,v 1.6 2017/04/22 17:56:40 gsotirov Exp $
 #
 
 . ../../slack-package.conf
 
 NAME=libmspack
 VERSION='0.5alpha'
-ARCH=${ARCH:-i486}
+ARCH=${ARCH:-i586}
 BUILD=${BUILD:-1}
 
 CWD=${CWD:-`pwd`}
