@@ -1,11 +1,12 @@
-libmspack: libmspack 2006-09-20 (A library for Microsoft compression formats)
+libmspack: libmspack (a library for some Microsoft compression formats)
 libmspack:
 libmspack: The purpose of libmspack is to provide both compression and
 libmspack: decompression of some loosely related file formats used by
-libmspack: Microsoft. Currently the most common formats are implemented.
-libmspack:
-libmspack:
-libmspack:
+libmspack: Microsoft. Currently the followin formats are implemented:
+libmspack:  * COMPRESS.EXE (SZDD) [LZSS]
+libmspack:  * COMPRESS.EXE (KWAJ) [LZSS, Huffman, DEFLATE]
+libmspack:  * Microsoft Cabinet (.CAB) [DEFLATE, Quantum, LZX]
+libmspack:  * HTML Help (.CHM) [LZX]
+libmspack:  * Exchange Offline Address Book (.LZX) [LZX DELTA]
 libmspack:
 libmspack: Packaged by Georgi D. Sotirov <gdsotirov@dir.bg>
-libmspack:
