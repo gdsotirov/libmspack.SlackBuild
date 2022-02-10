@@ -75,14 +75,19 @@ DOCFILES="$DOCFILES COPYING.LIB"
 ( cd $PKG/usr/doc/${NAME}-${VERSION}; mv COPYING.LIB COPYING )
 
 install --directory --mode 755 $PKG/install
-install --mode 644 $CWD/slack-desc     $PKG/install/slack-desc
-install --mode 644 $CWD/slack-required $PKG/install/slack-required
+install --mode 644 --preserve-timestamps \
+        $CWD/slack-desc     $PKG/install/slack-desc
+install --mode 644 --preserve-timestamps \
+        $CWD/slack-required $PKG/install/slack-required
 
 SBDIR=$PKG/usr/src/slackbuilds/${NAME}-${VERSION}
 install --directory --mode 755 $SBDIR
-install --mode 644 $CWD/slack-desc         $SBDIR/slack-desc
-install --mode 644 $CWD/slack-required     $SBDIR/slack-required
-install --mode 644 $CWD/${NAME}.SlackBuild $SBDIR/${NAME}.SlackBuild
+install --mode 644 --preserve-timestamps \
+        $CWD/slack-desc         $SBDIR/slack-desc
+install --mode 644 --preserve-timestamps \
+        $CWD/slack-required     $SBDIR/slack-required
+install --mode 644 --preserve-timestamps \
+        $CWD/${NAME}.SlackBuild $SBDIR/${NAME}.SlackBuild
 
 # Assemble
 cd $PKG
